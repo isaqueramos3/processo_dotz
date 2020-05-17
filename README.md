@@ -1,4 +1,4 @@
-# processo_dotz
+# Processo Dotz
 
 # Desenho Arquitetura
 ![draw_io_dotz](https://user-images.githubusercontent.com/65379861/82136360-87cdc000-97e3-11ea-9c51-f35f93d94367.png)
@@ -16,6 +16,17 @@ Usado para criar uma VM MySQL, para armazenamento e vizualicação dos dados pro
 
 ## Cloud Cron Job (Não realizado)
 Utilizado para schedular todo o processo(diário).
+
+# Necessário para rodar Programa
+* VM gcp com Python;
+* Ambiente vitural (virutalenv: https://github.com/pypa/virtualenv);
+* instalar pacote de requerimentos;
+``` shell
+pip install -r requeriments.txt
+```
+* VM MySQL gcp;
+* Conectar VM ip client a VM MySQL;
+* Configurar cron job para o processo diário;
 
 # CREATE TABLE
 ## bill_of_materials
@@ -74,3 +85,4 @@ CREATE TABLE `price_quote` (
   `cost` double NULL
 );
 ```
+# OBSERVAÇES
