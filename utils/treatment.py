@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 class Treat:
     def __init__(self, df, int_columns, float_columns, str_columns):
         """
@@ -25,6 +28,7 @@ class Treat:
     def treat_str_columns(self):
         for i in self.str_columns:
             if i in self.df.columns:
+                self.df[i] = self.df[i].fillna('-')
                 self.df[i] = self.df[i].astype(str)
                 self.df[i] = self.df[i].str.lower()
             else: 
@@ -33,7 +37,10 @@ class Treat:
     def treat_float_columns(self):
         for i in self.float_columns:
             if i in self.df.columns:
-                self.df[i] = self.df[i].fillna(0)
+                self.df[i] = self.df[i].astype(str)
+                self.df[i] = self.df[i].apply(lambda x: np.nan if '9999' else x)
                 self.df[i] = self.df[i].astype(float)
+                self.df[i] = self.df[i].fillna(0)
+                
             else:
                 pass
