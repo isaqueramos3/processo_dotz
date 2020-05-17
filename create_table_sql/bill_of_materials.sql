@@ -1,0 +1,21 @@
+CREATE TABLE `bills_of_materials` (
+  `index` bigint(20) DEFAULT NULL,
+  `tube_assembly_id` text,
+  `component_id_1` text,
+  `quantity_1` double DEFAULT NULL,
+  `component_id_2` text,
+  `quantity_2` double DEFAULT NULL,
+  `component_id_3` text,
+  `quantity_3` double DEFAULT NULL,
+  `component_id_4` text,
+  `quantity_4` double DEFAULT NULL,
+  `component_id_5` text,
+  `quantity_5` double DEFAULT NULL,
+  `component_id_6` text,
+  `quantity_6` double DEFAULT NULL,
+  `component_id_7` text,
+  `quantity_7` double DEFAULT NULL,
+  `component_id_8` text,
+  `quantity_8` double DEFAULT NULL,
+  KEY `ix_bills_of_materials_index` (`index`)
+)

@@ -1,0 +1,14 @@
+gcp_paths:
+  raw:
+    bucket: dotz_raw
+  trusted:
+    bucket: dotz_trusted
+  refined:
+    bucekt: dotz_refined
+remote_paths:
+  downloads: /home/isaqueramos82/dotz_test/downloads/
+mysql:
+  username: 'root'
+  password: ''
+  database_ip: '34.69.189.194'
+  database: 'dotz'
