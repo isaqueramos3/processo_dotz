@@ -85,4 +85,29 @@ CREATE TABLE `price_quote` (
   `cost` double NULL
 );
 ```
-# OBSERVAÇES
+# Pastas e Arquivos
+## yaml_config
+### dotz_config.yaml
+Arquivo de configuração Yaml usado para guardar configurações relevantes ao processo, como Buckets e credenciais do Mysql. Armazenado no Bucket de configuraçes na gcp.
+
+## utils
+### utils 
+Arquivo python que contém funçes util para todo processo.
+
+### treatment
+Arquivo python que contém classe simples de "tratamento" dos arquivos inseridos no banco de dados.
+
+### mysql
+Arquivo python que contém função que retorna a conexão com o banco de dados.
+
+## src
+Pasta que contém processamento dos arquivos separados.
+###
+* bills
+* comp 
+* price
+***
+Todos tem a função de ler o aquivo baixado do bucket raw e executar o tratamento e mandar para o banco de dados, em suas respectivas tabelas.
+
+## main
+Arquivo python usado para todo o processo.
