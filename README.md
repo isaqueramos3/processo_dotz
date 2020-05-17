@@ -1,7 +1,7 @@
 # processo_dotz
 
 # Desenho Arquitetura
-![draw_io_dotz](https://user-images.githubusercontent.com/65379861/82135247-e6407180-97d6-11ea-9b89-42ba0174b291.png)
+![draw_io_dotz](https://user-images.githubusercontent.com/65379861/82136360-87cdc000-97e3-11ea-9c51-f35f93d94367.png)
 
 # Ferramentas usadas na GCP
 
@@ -14,7 +14,7 @@ Usado para criar uma VM com Python, para poder ler e processar os dados no bucke
 ## Cloud SQL
 Usado para criar uma VM MySQL, para armazenamento e vizualicação dos dados processados.
 
-## Cloud Scheduler
+## Cloud Cron Job (Não realizado)
 Utilizado para schedular todo o processo(diário).
 
 # CREATE TABLE
